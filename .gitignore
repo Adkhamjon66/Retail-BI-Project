@@ -1,0 +1,16 @@
+# Data files — never commit these
+data/
+sql/data/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environments
+.env
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
