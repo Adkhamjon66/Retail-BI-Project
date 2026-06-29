@@ -1,0 +1,5 @@
+In the Invoice colunm we have invoices starts with C which means cancelled and A means Adjusted bad debt  and corresponsibly in the quantity columns we have negative values, I think those negative quantities mean that item returned to the store ,
+now that i have to check 2 hypothesis :
+    1.0 negative quantities are only for those invoices start with C 
+    1.1 C****** invoices have corresponding 6 digit invoice numbers in the invoice columns and the quantity for these rows are non-negative 
+    2.0 incoices with A has negative price and it should have corresponding 6 digit invoices 
