@@ -1,0 +1,9 @@
+metric,value
+raw_rows,1067371
+raw_columns,10
+missing_description,4382
+missing_customer_id,243007
+distinct_invoices,53628
+distinct_products,5305
+minimum_invoice_datetime,2009-12-01 07:45:00
+maximum_invoice_datetime,2011-12-09 12:50:00

@@ -1,16 +1,24 @@
-# Data files — never commit these
-data/
-sql/data/
+# Virtual environments
+.venv/
+venv/
 
-# Python
+# Generated databases and Power BI inputs
+data/raw/
+data/clean/
+data/processed/
+sql/data/
+*.duckdb
+*.duckdb.wal
+
+# Python and Jupyter
 __pycache__/
-*.pyc
+*.py[cod]
 .ipynb_checkpoints/
 
-# Environments
+# Secrets and local settings
 .env
-*.egg-info/
 
-# OS files
+# OS/editor files
 .DS_Store
 Thumbs.db
+.vscode/

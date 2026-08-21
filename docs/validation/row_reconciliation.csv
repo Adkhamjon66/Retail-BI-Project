@@ -1,0 +1,5 @@
+stage,rows
+raw source rows,1067371
+clean typed rows,1067371
+after exact deduplication,1033036
+analytical fact rows,1027015
