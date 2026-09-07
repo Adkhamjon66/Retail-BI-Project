@@ -1,8 +1,8 @@
 table_name,row_count,file_name,file_size_mb
-fact_transactions,1027015,fact_transactions.parquet,30.644
+fact_transactions,1027015,fact_transactions.parquet,30.528
 dim_date,739,dim_date.parquet,0.007
-dim_product,5304,dim_product.parquet,0.096
-dim_customer,5940,dim_customer.parquet,0.139
+dim_product,5131,dim_product.parquet,0.093
+dim_customer,5940,dim_customer.parquet,0.138
 dim_country,43,dim_country.parquet,0.002
 agg_monthly_sales,25,agg_monthly_sales.parquet,0.002
 agg_customer_cohort,325,agg_customer_cohort.parquet,0.002

@@ -1,11 +1,15 @@
+docs/POWER_BI_BUILD_AND_PUBLISH_GUIDE.md
 # Virtual environments
 .venv/
 venv/
 
 # Generated databases and Power BI inputs
-data/raw/
-data/clean/
-data/processed/
+# Generated DuckDB database
+data/processed/retail_bi.duckdb
+
+# DuckDB temporary files
+*.duckdb
+*.duckdb.wal
 sql/data/
 *.duckdb
 *.duckdb.wal
@@ -22,3 +26,9 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Ignore Power BI development versions
+dashboards/*.pbix
+
+# But include the final dashboard
+!dashboards/Retail_powerBI_portfolio_V007_Final.pbix

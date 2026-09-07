@@ -1,5 +1,5 @@
 table_name,rows,distinct_keys
 dim_date,739,739
-dim_product,5304,5304
+dim_product,5131,5131
 dim_customer,5940,5940
 dim_country,43,43

@@ -7,7 +7,7 @@ SELECT
     source_period,
     CAST(source_row AS BIGINT) AS source_row,
     NULLIF(TRIM(CAST(invoice AS VARCHAR)), '') AS invoice_no,
-    NULLIF(TRIM(CAST(stock_code AS VARCHAR)), '') AS stock_code,
+    UPPER(NULLIF(TRIM(CAST(stock_code AS VARCHAR)), '')) AS stock_code,
     NULLIF(TRIM(CAST(description AS VARCHAR)), '') AS description,
     TRY_CAST(quantity AS INTEGER) AS quantity,
     TRY_CAST(invoice_date AS TIMESTAMP) AS invoice_datetime,
@@ -261,3 +261,4 @@ JOIN activity a USING (customer_key)
 WHERE a.activity_month >= fp.cohort_month
 GROUP BY fp.cohort_month, a.activity_month
 ORDER BY fp.cohort_month, a.activity_month;
+
